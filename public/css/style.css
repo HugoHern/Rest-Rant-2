@@ -1,9 +1,16 @@
 h1 {
     text-align: center;
     color: Red;
-  }
+}
+
+h2 {
+    text-align: center;
+    color: crimson;
+}
   
   img{
+      display: block;
+      margin: auto;
       border-radius: 8px;
       width: 300px;
       height: 300px;
