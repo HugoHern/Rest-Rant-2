@@ -1,11 +1,14 @@
+//moduls and globals
 require('dotenv').config()
 const express = require('express')
 const app = express()
 
-//view engine
+//view engine - express settings
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
-//importing router for restaurants / index page
+app.use(express.static('public'))
+
+//controllers and routes
 app.use('/places', require('./controllers/places'))
 
 //main page
