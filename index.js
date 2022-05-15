@@ -2,6 +2,9 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
+//importing router for restaurants
+app.use('/places', require('./controllers/places'))
+
 //main page
 app.get('/', (req, res) => {
     res.send('Hello world!')
