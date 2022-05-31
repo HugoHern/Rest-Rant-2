@@ -3,7 +3,7 @@ const React = require('react')
 const Def = require('../default')
 
 function index (data) {
-    //formatting data to html
+    //formatting data to html2
     let placesFormatted = data.places.map((place) => {
         return (
             <div className='col-sm-6'>
