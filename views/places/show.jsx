@@ -2,7 +2,7 @@ const React = require('react')
 const Def = require('../default')
 
 function show(data) {
-  console.log("showing this is where something is wrong " + data);
+  console.log("have to display comments" + data);
   let comments = <h3 className="inactive">No Comments Yet!</h3>;
   if (data.place.comments.length){
     comments = data.place.comments.map(c => {
@@ -38,7 +38,7 @@ function show(data) {
 
         <br />
         <h1>COMMENTS</h1>
-        <p>No Comments</p>
+        {comments}
       </main>
     </Def>
   );
